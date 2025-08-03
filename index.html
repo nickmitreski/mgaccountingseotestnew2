@@ -34,7 +34,7 @@
     <meta property="business:contact_data:country_name" content="Australia">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="MG Accounting Melbourne - Professional tax accountants and business advisors in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services. Call (03) 9563 4666 for financial peace of mind.">
+    <meta name="description" content="MG Accounting Melbourne - Professional tax accountants and business advisors in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
     <meta name="keywords" content="tax accountant melbourne, business advisor melbourne, financial planner melbourne, tax returns melbourne, bookkeeping services melbourne, SMSF accountant melbourne, oakleigh accountant, business advisory melbourne, tax planning melbourne, financial services melbourne, MG Accounting">
     
     <!-- Open Graph Meta Tags -->
@@ -51,7 +51,7 @@
     <meta name="twitter:image" content="images/logo-blue-black.png">
     
     <!-- Title -->
-    <title>MG Accounting Melbourne | Tax Accountants & Business Advisors Oakleigh | (03) 9563 4666</title>
+    <title>MG Accounting Melbourne | Tax Accountants & Business Advisors Oakleigh</title>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.mgaccounting.com.au">
@@ -62,39 +62,77 @@
     <!-- favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     
+    <!-- Critical CSS inline for above-the-fold content -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
+        .container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+        @media (min-width:768px){.container{width:750px}}
+        @media (min-width:992px){.container{width:970px}}
+        @media (min-width:1200px){.container{width:1170px}}
+        .row{margin-right:-15px;margin-left:-15px}
+        .col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}
+        .col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{float:left}
+        .col-xs-12{width:100%}
+        .col-xs-6{width:50%}
+        .col-sm-6{float:left;width:50%}
+        .col-md-6{float:left;width:50%}
+        .no-padding{padding:0}
+        .text-center{text-align:center}
+        .text-white{color:#fff}
+        .bg-black{background-color:#000}
+        .btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;border:1px solid transparent;border-radius:4px}
+        .btn-large{padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}
+        .btn-rounded{border-radius:25px}
+        .btn-blue{color:#fff;background-color:#337ab7;border-color:#2e6da4}
+        .btn-red{color:#fff;background-color:#d9534f;border-color:#d43f3a}
+        .text-red{color:#d9534f}
+        .margin-50px-bottom{margin-bottom:50px}
+        .margin-20px-bottom{margin-bottom:20px}
+        .wow{visibility:hidden}
+        .fadeIn{animation-name:fadeIn}
+        .fadeInLeft{animation-name:fadeInLeft}
+        .fadeInRight{animation-name:fadeInRight}
+        .fadeInUp{animation-name:fadeInUp}
+        .animated{animation-duration:1s;animation-fill-mode:both}
+        @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+        @keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}
+        @keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}
+        @keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}
+    </style>
+    
     <!-- Preload critical resources -->
     <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="js/jquery-3.2.1.js" as="script">
     <link rel="preload" href="images/cover2.jpg" as="image">
     
-    <!-- animation -->
-    <link rel="stylesheet" href="css/animate.min.css"/>
-    <!-- bootstrap -->
+    <!-- Critical CSS loaded immediately -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <!-- font-awesome icon -->
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="css/magnific-popup.min.css"/>
-    <!-- cube Portfolio -->
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
-    <!-- revolution slider -->
-    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css"  media="screen" />
-    <!-- owl carousel -->
-    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <!-- Swiper CSS File -->
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <!-- component.css push nav-->
-    <link rel="stylesheet" type="text/css" href="css/component.css"/>
-    <!-- bundle css -->
-    <link rel="stylesheet" href="css/core.css"/>
-    <!-- style -->
     <link rel="stylesheet" href="css/style.css"/>
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/core.css"/>
+    
+    <!-- Non-critical CSS loaded after page load -->
+    <link rel="preload" href="css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="revolution/css/settings.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/swiper.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/component.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- In the head section, add this line after other CSS links and before custom.css -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font display optimization -->
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-display: swap;
+        }
+    </style>
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
@@ -326,6 +364,37 @@
                 loadCSS('css/jquery.fancybox.min.css');
             }, 1000);
         });
+        
+        // Optimize font loading
+        if ('fonts' in document) {
+            document.fonts.ready.then(function() {
+                document.documentElement.classList.add('fonts-loaded');
+            });
+        }
+        
+        // Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Add passive event listeners for better scroll performance
+        document.addEventListener('scroll', function() {}, {passive: true});
+        document.addEventListener('touchstart', function() {}, {passive: true});
+        document.addEventListener('touchmove', function() {}, {passive: true});
+        document.addEventListener('wheel', function() {}, {passive: true});
     </script>
     
     <!-- Add Calendly widget script -->
@@ -401,7 +470,7 @@
             <ul>
                 <li data-index="rs-9" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- Add data-bgparallax attribute to the background image -->
-                    <img src="images/cover2.jpg" alt="MG Accounting Melbourne Office - Professional Tax Accountants in Oakleigh" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <img src="images/cover2.jpg" alt="MG Accounting Melbourne Office - Professional Tax Accountants in Oakleigh" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina width="1920" height="1080">
                     <!-- LAYER NR. 15 -->
                     <div class="tp-caption   tp-resizeme"
                          id="slide-67-layer-2"

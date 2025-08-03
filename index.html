@@ -42,7 +42,7 @@
     <meta property="business:contact_data:country_name" content="Australia">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="MG Accounting Melbourne - Professional tax accountants and business advisors in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
+    <meta name="description" content="MG Accounting Melbourne - Professional tax accountants in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
     <meta name="keywords" content="tax accountant melbourne, business advisor melbourne, financial planner melbourne, tax returns melbourne, bookkeeping services melbourne, SMSF accountant melbourne, oakleigh accountant, business advisory melbourne, tax planning melbourne, financial services melbourne, MG Accounting, tax returns oakleigh, business advisor oakleigh, accounting services melbourne, tax planning oakleigh, bookkeeping melbourne, SMSF services melbourne">
     <meta name="author" content="MG Accounting">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -50,8 +50,8 @@
     <meta name="bingbot" content="index, follow">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="MG Accounting Melbourne | Professional Tax Accountants & Business Advisors">
-    <meta property="og:description" content="MG Accounting Melbourne - Professional tax accountants and business advisors in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
+    <meta property="og:title" content="MG Accounting Melbourne | Professional Tax Accountants">
+    <meta property="og:description" content="MG Accounting Melbourne - Professional tax accountants in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
     <meta property="og:image" content="images/logo-blue-white.png">
     <meta property="og:image:width" content="400">
     <meta property="og:image:height" content="400">
@@ -63,14 +63,14 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MG Accounting Melbourne | Professional Tax Accountants & Business Advisors">
-    <meta name="twitter:description" content="MG Accounting Melbourne - Professional tax accountants and business advisors in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
+    <meta name="twitter:title" content="MG Accounting Melbourne | Professional Tax Accountants">
+    <meta name="twitter:description" content="MG Accounting Melbourne - Professional tax accountants in Oakleigh. Expert tax planning, business advisory, bookkeeping, and SMSF services.">
     <meta name="twitter:image" content="images/logo-blue-white.png">
     <meta name="twitter:site" content="@mgaccounting">
     <meta name="twitter:creator" content="@mgaccounting">
     
     <!-- Title -->
-    <title>MG Accounting Melbourne | Tax Accountants & Business Advisors Oakleigh</title>
+    <title>MG Accounting Melbourne | Tax Accountants Oakleigh</title>
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.mgaccounting.com.au">
@@ -118,6 +118,32 @@
         @keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}
         @keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}
         @keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}
+        
+        /* Additional critical styles for hero section */
+        .parallax-hero{position:relative;overflow:hidden}
+        .rev_slider_wrapper{position:relative}
+        .rev_slider{position:relative;overflow:hidden}
+        .tp-caption{position:absolute;z-index:10}
+        .text-red{color:#CB342C!important}
+        .font-weight-700{font-weight:700}
+        .font-weight-300{font-weight:300}
+        .alt-font{font-family:'Poppins',sans-serif}
+        .sm-width-100{width:100%}
+        .xs-width-100{width:100%}
+        .margin-20px-bottom{margin-bottom:20px}
+        .margin-30px-bottom{margin-bottom:30px}
+        .margin-50px-bottom{margin-bottom:50px}
+        .padding-80px-tb{padding-top:80px;padding-bottom:80px}
+        .padding-20px-all{padding:20px}
+        .bg-light-gray{background-color:#f8f9fa}
+        .text-dark-gray{color:#333}
+        .text-capitalize{text-transform:capitalize}
+        .area-heading{text-align:center}
+        .area-title{font-size:36px;line-height:1.2}
+        .seperator{position:relative;text-align:center}
+        .seperator-one,.seperator-two{height:2px;margin:0 auto}
+        .seperator-one{width:60px;background-color:#CB342C}
+        .seperator-two{width:40px;background-color:#333;margin-top:5px}
     </style>
     
     <!-- Preload critical resources -->
@@ -165,7 +191,6 @@
     <!-- Preconnect to critical third-party origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     
     <!-- Add this line after other CSS links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -1281,7 +1306,7 @@
                       </div>
                     </div>
                   </div>
-                  <button type="button" id="calculateButtonMobile" class="calculator-btn">
+                  <button type="button" id="calculateButtonMobile" class="calculator-btn" aria-label="Calculate your tax refund">
                     <i class="fa fa-calculator" aria-hidden="true"></i> Calculate Your Refund
                   </button>
                   <div class="bg-light-gray padding-20px-all margin-30px-top">
@@ -1554,7 +1579,7 @@ if (typeof jQuery != 'undefined') {
             </div>
         </div>
         <div class="chatbot-input-container">
-            <textarea id="chatbot-input" class="chatbot-input" placeholder="Type your message..."></textarea>
+                                <textarea id="chatbot-input" class="chatbot-input" placeholder="Type your message..." aria-label="Type your message to MG Accounting Assistant"></textarea>
             <button id="chatbot-send" class="chatbot-send" aria-label="Send message">
                 <i class="fa fa-paper-plane" aria-hidden="true"></i>
             </button>

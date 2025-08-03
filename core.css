@@ -1,0 +1,43 @@
+/* Add these rules to override any existing parallax settings */
+.parallax *:not(.rev-slidebg),
+.fix-background *:not(.rev-slidebg),
+.cover-background *:not(.rev-slidebg) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Override any existing parallax visibility settings */
+[data-parallax-background-ratio] *:not(.rev-slidebg),
+[data-parallax] *:not(.rev-slidebg) {
+ ahing   opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+} 
+
+/* text color */
+.text-red {color: #CB342C}
+.text-blue {color: #CB342C}
+
+/* background color */
+.bg-grd-blue {
+    background: rgb(203, 52, 44);
+    background: -moz-linear-gradient(left, rgb(203, 52, 44) 0%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, rgb(203, 52, 44) 0%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(203, 52, 44) 0%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CB342C', endColorstr='#000000',GradientType=1 );
+}
+
+.bg-grd-dark-blue {
+    background: rgb(203, 52, 44);
+    background: -moz-linear-gradient(left, rgb(203, 52, 44) 0%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(left, rgb(203, 52, 44) 0%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to right, rgb(203, 52, 44) 0%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CB342C', endColorstr='#000000', GradientType=1);
+}
+
+/* Push menu border colors */
+.pushmenu {
+    border-bottom: 3px solid #CB342C;
+    border-top: 3px solid #CB342C;
+} 

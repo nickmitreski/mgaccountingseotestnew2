@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Accounting - Australian Tax Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar navbar-default bootsnav navbar-fixed-top header-light bg-white nav-box-width">
+            <div class="container nav-header-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Start Header Navigation -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a href="index.html" class="navbar-brand">
+                                <img src="images/logo.png" alt="MG Accounting" class="logo">
+                            </a>
+                        </div>
+                        <!-- End Header Navigation -->
+                        
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+                                <li>
+                                    <a href="index.html">Back to Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navigation -->
+    
+    <div class="main-content" style="margin-top: 100px;">
+        <section id="tax-calculator" class="calculator-section padding-80px-tb">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="area-heading text-center margin-50px-bottom">
+                            <h3 class="area-title text-capitalize alt-font text-red margin-20px-bottom font-weight-300" style="font-family: 'Poppins', sans-serif;">
+                                Australian Tax Calculator</h3>
+                            <div class="seperator margin-20px-bottom">
+                                <hr class="seperator-two">
+                                <hr class="seperator-one">
+                            </div>
+                            <p class="text-dark-gray font-weight-300" style="font-family: 'Poppins', sans-serif; margin-bottom: 20px;">
+                                Calculate your salary, tax, and take-home pay using our comprehensive Australian tax calculator with up-to-date 2024-25 tax rates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="calculator-wrap">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-section bg-light-gray padding-30px-all">
+                                        <h4 class="margin-20px-bottom">Your Income Details</h4>
+                                        
+                                        <div class="form-group">
+                                            <label>Annual Salary</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">$</span>
+                                                </div>
+                                                <input type="number" id="salary" class="form-control" placeholder="e.g. 80000">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Pay Period</label>
+                                            <select id="payPeriod" class="form-control">
+                                                <option value="annual">Annually</option>
+                                                <option value="monthly">Monthly</option>
+                                                <option value="fortnightly">Fortnightly</option>
+                                                <option value="weekly">Weekly</option>
+                                                <option value="hourly">Hourly</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div id="hoursContainer" class="form-group" style="display: none;">
+                                            <label>Hours Per Week</label>
+                                            <input type="number" id="hoursPerWeek" class="form-control" value="38">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Super Contribution Rate (%)</label>
+                                            <input type="number" id="superRate" class="form-control" value="11.0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Tax Year</label>
+                                            <select id="taxYear" class="form-control">
+                                                <option value="2024">2024-25 (current)</option>
+                                                <option value="2023">2023-24</option>
+                                                <option value="2022">2022-23</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <h4 class="margin-20px-top margin-20px-bottom">Options</h4>
+                                        
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" id="includeSuperOption"> Salary includes superannuation</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" id="noPrivateHealthOption"> No private health insurance</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" id="nonResidentOption"> Non-resident for tax purposes</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" id="helpDebtOption"> HELP/HECS debt</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="button" id="calculateButton" class="calculator-btn">
+                                            <i class="fa fa-calculator" aria-hidden="true"></i> Calculate My Tax
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="results-panel bg-light-gray padding-30px-all">
+                                        <h4 class="margin-20px-bottom">Your Tax Calculation</h4>
+                                        
+                                        <div class="tab-container">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active">
+                                                    <a href="#summaryTab" role="tab" data-toggle="tab">Summary</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a href="#detailsTab" role="tab" data-toggle="tab">Details</a>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane fade in active" id="summaryTab">
+                                                    <div class="summary-table margin-20px-top">
+                                                        <table class="table table-responsive">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Component</th>
+                                                                    <th class="text-center">Weekly</th>
+                                                                    <th class="text-center">Fortnightly</th>
+                                                                    <th class="text-center">Monthly</th>
+                                                                    <th class="text-center">Annually</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="summaryTableBody">
+                                                                <!-- Data will be filled by JavaScript -->
+                                                                <tr class="gross-row">
+                                                                    <td><strong>Gross Income</strong></td>
+                                                                    <td class="text-center" id="grossWeekly">$0</td>
+                                                                    <td class="text-center" id="grossFortnightly">$0</td>
+                                                                    <td class="text-center" id="grossMonthly">$0</td>
+                                                                    <td class="text-center" id="grossAnnually">$0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Superannuation</td>
+                                                                    <td class="text-center" id="superWeekly">$0</td>
+                                                                    <td class="text-center" id="superFortnightly">$0</td>
+                                                                    <td class="text-center" id="superMonthly">$0</td>
+                                                                    <td class="text-center" id="superAnnually">$0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tax</td>
+                                                                    <td class="text-center" id="taxWeekly">$0</td>
+                                                                    <td class="text-center" id="taxFortnightly">$0</td>
+                                                                    <td class="text-center" id="taxMonthly">$0</td>
+                                                                    <td class="text-center" id="taxAnnually">$0</td>
+                                                                </tr>
+                                                                <tr class="take-home-row">
+                                                                    <td><strong>Take Home Pay</strong></td>
+                                                                    <td class="text-center" id="takeHomeWeekly">$0</td>
+                                                                    <td class="text-center" id="takeHomeFortnightly">$0</td>
+                                                                    <td class="text-center" id="takeHomeMonthly">$0</td>
+                                                                    <td class="text-center" id="takeHomeAnnually">$0</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div role="tabpanel" class="tab-pane fade" id="detailsTab">
+                                                    <div id="taxResults" class="margin-20px-top">
+                                                        <!-- Tax breakdown details will go here -->
+                                                        <div class="result-item">
+                                                            <span>Income Tax:</span>
+                                                            <span id="incomeTax">$0</span>
+                                                        </div>
+                                                        <div class="result-item">
+                                                            <span>Medicare Levy:</span>
+                                                            <span id="medicareLevy">$0</span>
+                                                        </div>
+                                                        <div class="result-item">
+                                                            <span>Medicare Levy Surcharge:</span>
+                                                            <span id="medicareSurcharge">$0</span>
+                                                        </div>
+                                                        <div class="result-item">
+                                                            <span>Low Income Tax Offset:</span>
+                                                            <span id="lowIncomeOffset">$0</span>
+                                                        </div>
+                                                        <div class="result-item">
+                                                            <span>HELP/HECS Repayment:</span>
+                                                            <span id="helpRepayment">$0</span>
+                                                        </div>
+                                                        <div class="result-item total">
+                                                            <span>Total Tax Payable:</span>
+                                                            <span id="totalTax">$0</span>
+                                                        </div>
+                                                        <div class="result-item">
+                                                            <span>Effective Tax Rate:</span>
+                                                            <span id="effectiveTaxRate">0%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="disclaimer-text margin-20px-top">
+                                            <p class="small"><em>*This calculator provides estimates only and should not be used for tax return preparation. Tax rates based on 2024-25 ATO rates. Please consult a tax professional for specific advice.</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="padding-40px-tb bg-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 text-center text-sm-left">
+                    <div class="text-small text-white">© 2024 MG Accounting. All rights reserved.</div>
+                </div>
+                <div class="col-sm-6 col-xs-12 text-center text-sm-right">
+                    <div class="text-small text-white">
+                        <a href="index.html" class="text-white">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/paycalculator.js"></script>
+</body>
+</html>

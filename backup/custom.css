@@ -1,0 +1,1117 @@
+.animated {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+/* Add animation classes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Add more animation classes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-30px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translate3d(30px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+/* Add scroll reveal animations */
+.reveal {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.reveal.from-left {
+    transform: translateX(-50px);
+}
+
+.reveal.from-right {
+    transform: translateX(50px);
+}
+
+.reveal.from-bottom {
+    transform: translateY(50px);
+}
+
+.reveal.active.from-left,
+.reveal.active.from-right,
+.reveal.active.from-bottom {
+    transform: translateX(0) translateY(0);
+}
+
+/* Enhanced button hover effects */
+.btn {
+    transition: all 0.3s ease !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced hover effects for all buttons */
+.btn-red:hover,
+.btn-blue:hover,
+.btn-white:hover,
+.btn-transparent-red:hover,
+.btn-transparent-blue:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Service boxes styling */
+.service-box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 25px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.service-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(203, 52, 44, 0.05) 0%, rgba(203, 52, 44, 0.1) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.service-box:hover:before {
+    opacity: 1;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-box:hover .service-icon {
+    transform: scale(1.1);
+    color: #CB342C;
+}
+
+.service-icon {
+    font-size: 36px;
+    color: #CB342C;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-content h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.service-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+/* Add hover effects to nav links */
+.navbar-nav > li > a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #CB342C;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav > li > a:hover:after {
+    width: 70%;
+}
+
+/* Add hover effects to service list items */
+.service-list li {
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 5px !important;
+}
+
+.service-list li:before {
+    content: '•';
+    position: absolute;
+    left: -10px;
+    color: #CB342C;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+    padding-left: 15px !important;
+    color: #CB342C;
+}
+
+.service-list li:hover:before {
+    left: 0;
+    opacity: 1;
+}
+
+/* Tax Calculator Styles - Enhanced Design */
+.calculator-section {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    border-radius: 8px;
+}
+
+/* Calculator styling */
+.calculator-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator-btn i {
+    margin-right: 10px;
+}
+
+.calculator-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Calculator Section */
+.results-panel {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+#taxResults .result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+#taxResults .result-item.total {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 0;
+    margin-top: 10px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    color: #E53935;
+}
+
+/* Fix input styling for tax calculator */
+.panel-group .panel {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.panel-heading {
+    padding: 0;
+}
+
+.panel-title a {
+    padding: 12px 15px;
+    display: block;
+    background-color: #f8f8f8;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.panel-title a:hover {
+    background-color: #f1f1f1;
+}
+
+.panel-title a .fa {
+    transition: transform 0.3s;
+}
+
+.panel-title a.collapsed .fa-chevron-down {
+    transform: rotate(-90deg);
+}
+
+.panel-body {
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form elements in calculator */
+#work .form-control, 
+#work label,
+#work .form-group,
+#work .checkbox label {
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Mobile Responsiveness for calculator */
+@media (max-width: 768px) {
+    .results-panel {
+        margin-top: 30px;
+    }
+    
+    #taxResults .result-item {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 767px) {
+    /* General Typography */
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.4;
+    }
+    h3.area-title {
+        font-size: 24px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+    
+    /* Navigation */
+    .navbar-nav {
+        margin: 0;
+    }
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.95);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .navbar-nav > li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    /* Sections Padding */
+    section {
+        padding: 50px 0 !important;
+    }
+    .padding-50px-bottom {
+        padding-bottom: 30px !important;
+    }
+    .margin-50px-bottom {
+        margin-bottom: 30px !important;
+    }
+    
+    /* Services Section */
+    .service-box {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+    
+    /* Client Tabs */
+    .nav-tabs > li {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .nav-tabs > li > a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    /* Calculator Section */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    #taxResults .result-item {
+        font-size: 13px;
+    }
+    
+    /* Contact Section */
+    .map-wrapper {
+        height: 250px;
+        margin-top: 30px;
+    }
+    
+    /* Hero Section */
+    #slide-67-layer-2 {
+        font-size: 32px !important;
+        line-height: 40px !important;
+        letter-spacing: -1px !important;
+    }
+    #slide-67-layer-3 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+    
+    /* Footer */
+    .footer-nav a {
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .verticle-line {
+        margin: 0 2px;
+    }
+    
+    /* Make collapsible panels more mobile friendly */
+    .panel-heading {
+        padding: 10px 15px;
+    }
+    
+    .panel-title {
+        font-size: 14px;
+    }
+    
+    .panel-body {
+        padding: 10px;
+    }
+    
+    /* Fix bootstrap row issues on mobile */
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, 
+    .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+    .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, 
+    .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, 
+    .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, 
+    .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+    .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, 
+    .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+    .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, 
+    .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
+    .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, 
+    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav-tabs > li > a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .service-box {
+        min-height: 320px;
+    }
+    
+    #slide-67-layer-2 {
+        font-size: 60px !important;
+        line-height: 60px !important;
+    }
+    
+    /* Improve spacing on tablet */
+    .margin-50px-bottom {
+        margin-bottom: 40px !important;
+    }
+    
+    .padding-50px-bottom {
+        padding-bottom: 40px !important;
+    }
+}
+
+/* Make nav buttons less bold and move them to the right */
+.navbar-nav > li > a {
+    font-weight: 500 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.navbar-nav {
+    margin-right: 30px;
+}
+
+/* Bold text for About section titles */
+.text-red[style*="font-size: 24px"] {
+    font-weight: 700 !important;
+}
+
+/* Fix input styling for tax calculator */
+.form-control {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    border-color: #CB342C;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(203, 52, 44, 0.25);
+}
+
+/* Add subtle animation to the logo */
+.navbar-header img {
+    transition: all 0.3s ease;
+}
+
+.navbar-header:hover img {
+    transform: scale(1.05);
+}
+
+/* Add animation to the progress bars */
+.progress {
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    position: relative;
+    overflow: hidden;
+    transition: width 1.5s ease;
+}
+
+.progress-bar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+    animation: progress-animation 2s infinite;
+}
+
+@keyframes progress-animation {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Add animation to the particles section */
+#particles-js {
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(203, 52, 44, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+#particles-js:hover:before {
+    opacity: 1;
+}
+
+#particles-js .text-white,
+#particles-js h4,
+#particles-js .btn {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+#particles-js:hover .text-white,
+#particles-js:hover h4 {
+    transform: translateY(-5px);
+}
+
+#particles-js:hover .btn {
+    transform: translateY(5px);
+}
+
+/* Hide loader completely */
+#loader {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Add new hero animations */
+@keyframes fadeInSoft {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes blurIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.fadeInSoft {
+    animation-name: fadeInSoft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.scaleIn {
+    animation-name: scaleIn;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.blurIn {
+    animation-name: blurIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+/* Initially hide hero elements */
+#slide-67-layer-2,
+#slide-67-layer-3,
+#slide-67-layer-7 {
+    opacity: 0;
+}
+
+/* Hero background animation */
+.parallax-hero .rev-slidebg {
+    animation: heroBackgroundIn 2s ease-out forwards;
+    transform-origin: center center;
+}
+
+@keyframes heroBackgroundIn {
+    from {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hero contact button hover effect */
+#slide-67-layer-7 .btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out !important;
+    background: linear-gradient(45deg, #CB342C 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    border: 2px solid #CB342C !important;
+}
+
+#slide-67-layer-7 .btn:hover {
+    background-position: 0;
+    color: #fff !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(203, 52, 44, 0.2);
+}
+
+#slide-67-layer-7 .btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+#slide-67-layer-7 .btn:hover:before {
+    transform: translateX(100%);
+}
+
+/* Contact section layout fixes */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
+}
+
+.contact-info-col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 15px;
+}
+
+.contact-form-col {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+    padding: 15px;
+}
+
+.contact-info-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.contact-info-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info-item i {
+    color: #CB342C;
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.contact-info-text {
+    flex: 1;
+}
+
+.contact-info-text h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-form textarea.form-control {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form .form-control:focus {
+    border-color: #CB342C;
+    box-shadow: 0 0 0 0.2rem rgba(203, 52, 44, 0.15);
+}
+
+.contact-form .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .contact-info-col,
+    .contact-form-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .contact-info-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-form {
+        padding: 25px;
+    }
+    
+    .contact-info-item {
+        margin-bottom: 20px;
+    }
+    
+    .contact-form .form-control {
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .contact-form textarea.form-control {
+        height: 120px;
+    }
+}
+
+/* New PayCalculator-inspired Tax Calculator Styles */
+.calculator-wrap {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.input-section {
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.input-section h4, .results-panel h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section .form-control {
+    height: 46px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+}
+
+.input-section .form-control:focus {
+    border-color: #CB342C;
+    box-shadow: 0 0 0 0.2rem rgba(203, 52, 44, 0.15);
+}
+
+.input-section .input-group-text {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-right: none;
+    color: #555;
+}
+
+.input-section label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    color: #555;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Calculator button with enhanced style */
+#calculateButton {
+    background-color: #CB342C;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculateButton i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#calculateButton:hover {
+    background-color: #a42a23;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(203, 52, 44, 0.2);
+}
+
+/* Results panel styling */
+.results-panel {
+    padding: 30px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.nav-tabs > li > a {
+    border: none;
+    color: #666;
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.3s;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li > a:hover, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+    color: #CB342C;
+    border: none;
+    border-bottom: 2px solid #CB342C;
+    background-color: transparent;
+}
+
+.tab-content {
+    padding-top: 20px;
+}
+
+.summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.summary-table th, .summary-table td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+.summary-table th {
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.summary-table td {
+    font-size: 15px;
+    color: #333;
+}
+
+.summary-table .gross-row, .summary-table .take-home-row {
+    background-color: rgba(203, 52, 44, 0.05);
+}
+
+.summary-table .take-home-row td {
+    font-weight: 700;
+    border-top: 2px solid #ddd;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+.result-item span:first-child {
+    color: #555;
+}
+
+.result-item span:last-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.result-item.total {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 0;
+    margin-top: 10px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    color: #CB342C;
+}
+
+.disclaimer-text {
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 767px) {
+    .input-section, .results-panel {
+        padding: 20px;
+    }
+    
+    .nav-tabs > li > a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .summary-table th, .summary-table td {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+    
+    #calculateButton {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .result-item.total {
+        font-size: 16px;
+    }
+    
+    .results-panel {
+        margin-top: 30px;
+    }
+} 

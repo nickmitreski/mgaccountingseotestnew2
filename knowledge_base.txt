@@ -1,0 +1,214 @@
+=== MG Accounting Information ===
+
+**About Us:**
+- Established in 1990, MG Accounting is a trusted financial partner for businesses and individuals across Australia.
+- With over 30 years of experience navigating economic landscapes, we provide strategic, innovative accounting and financial advice tailored to clients' unique goals.
+- Our core values are integrity, diligence, transparency, fairness, humility, and respect.
+- We prioritize client privacy and confidentiality, leveraging a network of trusted referral partners.
+- Recognized for excellence in accounting services, with a focus on sustainable client growth.
+
+**Services:**
+- **Tax Planning & Returns:**
+  - Strategic tax planning and compliance for individuals and businesses.
+  - Maximizing deductions and minimizing liabilities through tailored strategies.
+  - Services include individual tax returns, business tax planning, and tax minimization strategies.
+  - Example: Optimizing deductions for work-related expenses or business costs.
+- **Business Advisory:**
+  - Expert guidance for business growth, strategic planning, and performance optimization.
+  - Services include growth strategies, performance analysis, and business structure setup.
+  - Example: Assisting startups with financial forecasting or established firms with expansion plans.
+- **Bookkeeping & Payroll:**
+  - Accurate, efficient financial record-keeping and streamlined payroll management.
+  - Services include financial records management, payroll processing, BAS & IAS lodgment, and cloud computing solutions.
+  - Utilizes platforms like Xero and MYOB for real-time financial insights.
+- **Wealth Management:**
+  - Comprehensive wealth-building and protection strategies for long-term financial security.
+  - Services include investment planning, retirement strategies, and asset protection.
+  - Example: Developing diversified investment portfolios or retirement plans.
+- **SMSF Services:**
+  - Expert self-managed super fund (SMSF) setup, management, compliance, and auditing.
+  - Services include investment strategy development and regulatory reporting.
+  - Example: Ensuring SMSF compliance with ATO regulations for maximum benefits.
+- **Business Structuring:**
+  - Optimal business structure setup and advice to protect assets and minimize risk.
+  - Services include entity structure setup (e.g., sole trader, company, trust), risk management, and succession planning.
+  - Example: Advising on trust structures for tax efficiency and asset protection.
+
+**Client Statistics:**
+- Individual/Sole Trader Tax Returns lodged: 10,000+
+- Company Tax Returns lodged: 7,500+
+- Trust Tax Returns lodged: 5,000+
+- Partnerships & SMSF Tax Returns lodged: 4,500+
+
+**Clients:**
+- Serves diverse industries: Retail & Hospitality, Healthcare, Construction, Professional Services, Transport & Logistics, Food & Beverage.
+- Notable clients: Ferguson Plarre, 7-Eleven, Gloria Jeans, Australia Post, privately owned cafes/restaurants, poultry shops.
+- Example: Provided tax planning for retail chains to optimize deductions.
+
+**Contact Information:**
+- Address: 7-9 Station Street, Oakleigh VIC 3166, Australia
+- Email: info@mgaccounting.com.au
+- Phone: (03) 9563 4666
+- Business Hours: Monday - Friday, 9:00 AM - 5:00 PM
+
+**Tax Calculator:**
+- Offers a 2025 Individual Tax Return Estimator on the MG Accounting website.
+- Estimates tax returns based on income, deductions, and other inputs.
+- For accurate results, consult MG Accounting’s tax accountants.
+
+**Important Note:**
+- For personalized advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+=== General Australian Tax Information ===
+
+**Important Notes for Chatbot and Users:**
+- **Chatbot Directive:** For every tax-related question, include: "For personalized tax advice, please contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666."
+- **User Disclaimer:** This information is general and not a substitute for professional advice. For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+- The Australian financial year runs from July 1 to June 30, administered by the Australian Taxation Office (ATO).
+
+**Tax File Number (TFN):**
+- Required for employment, government payments, and tax purposes in Australia.
+- Apply online via the ATO or by paper; keep TFN secure and update details as needed.
+- Example: Needed to lodge tax returns or open bank accounts.
+
+**Tax Return:**
+- Individuals with taxable income must lodge annually, typically by October 31.
+- Lodge online via myGov or by paper; tax agents can assist.
+- ATO’s Tax Help program offers free assistance for low-income earners.
+- Example: Declare income from wages, investments, or side hustles.
+
+**Income and Deductions:**
+- **Income:** Declare all sources, including wages, business income, investments, and crypto assets.
+- **Deductions:** Claim eligible expenses to reduce taxable income.
+- **Common Deductions:**
+  - Work-related expenses: Uniforms, tools, work travel, home office costs.
+  - Self-education expenses: Courses related to current employment.
+  - Charitable donations: To ATO-registered charities.
+  - Professional fees: Tax agent fees, union dues.
+  - Investment expenses: Interest on loans for income-producing assets.
+- **How to Claim Deductions:**
+  - Maintain records (e.g., receipts, invoices) for five years.
+  - Ensure expenses are directly related to income generation.
+  - Example: Keep a logbook for work-related car expenses.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Medicare Levy:**
+- A 2% levy on taxable income to fund Australia’s public health system.
+- **Exemptions and Reductions:**
+  - Low-income earners may qualify for reductions or exemptions.
+  - For 2024-25, thresholds increased by 4.7% from 2023-24:
+    - Singles: Lower threshold ~$27,222, Upper threshold ~$34,028.
+    - Families: Varies based on income and dependents.
+  - Example: No levy if income is below $27,222 for singles.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Medicare Levy Surcharge (MLS):**
+- Applies to high-income earners without private hospital cover.
+- **Thresholds for 2024-25:**
+  - Singles: Base ≤$97,000 (0%), Tier 1 $97,001–$113,000 (1%), Tier 2 $113,001–$151,000 (1.25%), Tier 3 ≥$151,001 (1.5%).
+  - Families: Base ≤$194,000 (0%), Tier 1 $194,001–$226,000 (1%), Tier 2 $226,001–$302,000 (1.25%), Tier 3 ≥$302,001 (1.5%).
+  - Family threshold increases by $1,500 per dependent child after the first.
+- Example: A single earner with $120,000 income pays 1.25% MLS without private cover.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Investments and Assets:**
+- **Capital Gains Tax (CGT):** Applies to profits from selling assets like property or shares.
+  - 50% discount for assets held over 12 months (individuals).
+- **Negative Gearing:** Offset investment losses (e.g., property loan interest) against other income.
+- **Crypto Assets:** Gains from trading or selling crypto are taxable as capital gains or income.
+- Example: Selling shares held for two years may qualify for a CGT discount.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Superannuation:**
+- A retirement savings system with employer and personal contributions.
+- **Contribution Limits (2024-25):**
+  - Concessional (pre-tax): $30,000 (e.g., employer super guarantee).
+  - Non-concessional (after-tax): $110,000.
+- **Taxation:**
+  - Concessional contributions taxed at 15% (higher for high earners).
+  - Non-concessional contributions untaxed unless exceeding caps.
+- **SMSF:** Offers investment control but requires strict ATO compliance.
+- Example: Salary sacrificing to super can reduce taxable income.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Goods and Services Tax (GST):**
+- A 10% tax on most goods and services.
+- **Registration:** Mandatory for businesses with annual turnover ≥$75,000 ($150,000 for non-profits).
+- **GST-Free Items:** Includes basic food, medical services, and education.
+- Example: A café must register for GST if turnover exceeds $75,000.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Income Tax Rates (2024-25):**
+| Taxable Income Range       | Tax Rate                                      |
+|----------------------------|-----------------------------------------------|
+| $0 – $18,200              | Nil                                           |
+| $18,201 – $45,000         | 16c for each $1 over $18,200                  |
+| $45,001 – $135,000        | $4,288 plus 30c for each $1 over $45,000      |
+| $135,001 – $190,000       | $31,288 plus 37c for each $1 over $135,000    |
+| $190,001 and over         | $51,638 plus 45c for each $1 over $190,000    |
+- Note: Excludes Medicare levy (2%).
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Low-Income Tax Offset (LITO) (2024-25):**
+- Maximum $700 for taxable incomes below $37,500.
+- Phases out at 5% from $37,500 to $45,000, then 1.5% to $66,667 (nil).
+- Example: $30,000 income qualifies for full $700 offset.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Other Tax Offsets:**
+- **Seniors and Pensioners Tax Offset (SAPTO):** For eligible seniors/pensioners.
+- **Private Health Insurance Rebate:** Income-tested rebate for private health cover.
+- **Invalid and Invalid Carer Offset:** For maintaining an invalid or carer.
+- Example: SAPTO can reduce tax for retirees with low incomes.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Business Structures and Taxation:**
+- **Sole Trader:** Income taxed at individual rates; simple but no liability protection.
+- **Partnership:** Income split among partners, taxed at individual rates.
+- **Company:** Flat 30% tax rate (25% for small businesses); offers liability protection.
+- **Trust:** Income distributed to beneficiaries, taxed at their rates.
+- Example: A company structure suits businesses needing asset protection.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Tax Planning Strategies:**
+- **Maximize Deductions:** Claim all eligible expenses with proper records.
+- **Super Contributions:** Salary sacrifice to reduce taxable income.
+- **Income Splitting:** Distribute income via trusts or partnerships (if applicable).
+- **Timing Income/Expenses:** Defer income or bring forward expenses to lower tax.
+- Example: Donating to charity before June 30 can reduce taxable income.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Residency and International Tax:**
+- **Residency Status:** Determines tax obligations; residents taxed on worldwide income.
+- **Non-Residents:** Taxed only on Australian-sourced income at different rates.
+- **Moving Overseas:** Report foreign income and assets; may need to lodge returns.
+- Example: A non-resident pays 32.5% on the first $135,000 of Australian income.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Special Groups:**
+- **Aboriginal and Torres Strait Islander Peoples:** May access specific tax concessions.
+- **Norfolk Island Residents:** Unique tax arrangements apply.
+- **People with Disabilities:** Eligible for certain offsets or exemptions.
+- Example: Disability support pension recipients may qualify for tax offsets.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Financial Difficulties or Disasters:**
+- ATO offers payment plans or extensions for hardship or disaster-affected individuals.
+- Example: Deferring tax payments for bushfire-affected businesses.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+**Death and Final Tax Return:**
+- Estates may need to lodge a final tax return for the deceased.
+- Superannuation and assets may have tax implications.
+- Example: Super death benefits may be taxed depending on beneficiaries.
+- For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+
+=== Additional Notes for the Chatbot ===
+- **Operational Guidelines:**
+  - Always include the disclaimer: "For personalized tax advice, please contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666" for tax-related queries.
+  - Use a professional yet friendly tone, aligning with MG Accounting’s values.
+  - Direct users to the 2025 Tax Calculator for estimates: https://mgaccounting.com.au/tax-calculator.
+  - Avoid specific tax advice; guide users to seek professional assistance.
+  - Example Responses:
+    - Q: What’s the GST rate? A: GST is 10% on most goods and services. For personalized tax advice, contact MG Accounting at info@mgaccounting.com.au or (03) 9563 4666.
+    - Q: What services do you offer? A: MG Accounting offers tax planning, business advisory, bookkeeping, wealth management, SMSF services, and business structuring. Contact us at (03) 9563 4666 to learn more.

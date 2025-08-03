@@ -1,0 +1,25 @@
+{
+  "name": "mg-accounting-website",
+  "version": "1.1.2",
+  "description": "MG Accounting Website with AI-powered chatbot",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "MG Accounting",
+  "license": "UNLICENSED",
+  "deployTimestamp": "2024-03-19T15:00:00Z",
+  "type": "commonjs",
+  "description": "MG Accounting Website with Vercel serverless chatbot integration.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickmitreski/MGAccounting.git"
+  }
+} 

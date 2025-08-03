@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator - Mobile</title>
+    <link rel="stylesheet" href="css/mobile-styles.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <h1>Australian Tax Calculator</h1>
+        <form id="mobileTaxForm">
+            <div class="input-group">
+                <h2>Income Details</h2>
+                <label for="annualIncomeMobile">Annual Income</label>
+                <input type="number" id="annualIncomeMobile" step="1000" required>
+                
+                <label for="taxWithheldMobile">Tax Withheld</label>
+                <input type="number" id="taxWithheldMobile" step="100">
+                
+                <label for="superContributionsMobile">Super Contributions</label>
+                <input type="number" id="superContributionsMobile" step="100">
+                
+                <label for="fringeBenefitsMobile">Fringe Benefits</label>
+                <input type="number" id="fringeBenefitsMobile" step="100">
+                
+                <label for="otherIncomeMobile">Other Income</label>
+                <input type="number" id="otherIncomeMobile" step="100">
+            </div>
+            
+            <div class="input-group">
+                <h2>Deductions & Benefits</h2>
+                <label for="totalDeductionsMobile">Total Deductions</label>
+                <input type="number" id="totalDeductionsMobile" step="100">
+                
+                <label for="helpBalanceMobile">HELP/HECS Balance</label>
+                <input type="number" id="helpBalanceMobile" step="100">
+            </div>
+            
+            <div class="input-group">
+                <h2>Personal Details</h2>
+                <label for="ageMobile">Age</label>
+                <input type="number" id="ageMobile" min="0" max="120">
+                
+                <label for="dependentsMobile">Number of Dependents</label>
+                <input type="number" id="dependentsMobile" min="0" max="10">
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="isFamilyMobile">
+                    <label for="isFamilyMobile">Family Tax Assessment</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="isResidentMobile" checked>
+                    <label for="isResidentMobile">Australian Resident for Tax</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hasPrivateHealthMobile">
+                    <label for="hasPrivateHealthMobile">Private Health Insurance</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="isOverseasMobile">
+                    <label for="isOverseasMobile">Residing Overseas</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="calculate-btn">Calculate Tax</button>
+        </form>
+        
+        <div id="mobileResultsContainer"></div>
+    </div>
+    
+    <script src="js/tax-utils.js"></script>
+    <script src="js/mobile-calculator.js"></script>
+</body>
+</html> 

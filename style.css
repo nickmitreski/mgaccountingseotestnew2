@@ -1,0 +1,404 @@
+/* Add at the top of style.css */
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Update all font families */
+.alt-font,
+.main-font,
+h1, h2, h3, h4, h5, h6,
+.navbar-default .navbar-nav > li > a,
+.text-extra-large,
+.text-large,
+.text-medium,
+.text-small,
+.text-extra-small,
+.btn,
+.tp-caption,
+.rev-btn,
+.price-item,
+.blog-inner,
+.testimonial-two-block,
+.contact-form,
+.footer-nav {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Update any Raleway specific styles */
+[style*="font-family:'Raleway'"],
+[style*="font-family: 'Raleway'"] {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.text-custom {
+    color: #CB342C !important;
+}
+
+/* Also update any existing .text-red rules to use the new color */
+.text-red {
+    color: #CB342C !important;
+}
+
+/* Update any other red-related classes */
+.btn-red,
+.btn-hvr-red:hover,
+.bg-red {
+    background-color: #CB342C !important;
+}
+
+.btn-transparent-red {
+    border: 2px solid #CB342C !important;
+    color: #CB342C !important;
+}
+
+.btn-transparent-red:hover {
+    background-color: #CB342C !important;
+    border: 2px solid #CB342C !important;
+    color: #ffffff !important;
+}
+
+/* Add these styles for parallax effect */
+.parallax-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-hero .rev-slidebg {
+    transform: translate3d(0,0,0) scale(1.2); /* Added scale for more coverage */
+    transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: transform;
+    /* Added to ensure image covers area during movement */
+    position: absolute;
+    top: -20%; /* Negative offset to allow more movement room */
+    left: 0;
+    width: 100%;
+    height: 120%; /* Increased height to prevent gaps */
+}
+
+/* Update existing styles */
+#rev_slider_5_1_wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.text-red-bold {
+    color: #CB342C; /* or your existing red color */
+    font-weight: 900 !important;
+}
+
+/* Hide Revolution Slider layers except background */
+.tp-caption:not(.rev-slidebg),
+.rs-layer:not(.rev-slidebg) {
+    opacity: 0 !important;
+}
+
+/* Hide floating objects in hero section */
+.tp-caption.tp-resizeme.rs-parallaxlevel-4,
+.slotholder + .tp-parallax-wrap,
+.tp-parallax-wrap .tp-caption {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Also target the specific div structure shown in your HTML */
+div[class*="tp-parallax-wrap"],
+div[id^="slide-"][id*="-layer-"] {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Hide specific floating objects */
+img[src*="2f14d-triangle"],
+img[src*="20d9e-circle"],
+img[src*="23129-square"],
+div:has(> img[src*="2f14d-triangle"]),
+div:has(> img[src*="20d9e-circle"]),
+div:has(> img[src*="23129-square"]) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Target their parent containers */
+.tp-parallax-wrap,
+.tp-caption:has(img[src*="-triangle"]),
+.tp-caption:has(img[src*="-circle"]),
+.tp-caption:has(img[src*="-square"]) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Additional fallback for Revolution Slider specific layers */
+.rs-parallaxlevel-4,
+.rs-parallaxlevel-3,
+.rs-parallaxlevel-2,
+[class*="rs-parallaxlevel-"] {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Target Revolution Slider floating objects */
+#slide-9-layer-4,
+#slide-9-layer-3,
+#slide-9-layer-2,
+.tp-parallax-wrap .tp-mask-wrap .tp-caption,
+.tp-parallax-wrap .tp-mask-wrap .rs-layer {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Target the wrapper elements */
+.tp-parallax-wrap,
+.tp-mask-wrap {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Target by background image names more specifically */
+div[style*="2f14d-triangle"],
+div[style*="20d9e-circle"],
+div[style*="23129-square"],
+img[src*="2f14d-triangle.png"],
+img[src*="20d9e-circle.png"],
+img[src*="23129-square.png"] {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Hide all parallax elements except the main background */
+[class*="rs-parallaxlevel"]:not(.rev-slidebg),
+[data-parallaxlevel]:not(.rev-slidebg) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Target all Revolution Slider layers and objects */
+.tp-parallax-wrap,
+.tp-loop-wrap,
+.tp-mask-wrap,
+.tp-caption:not(.rev-slidebg),
+.rs-layer:not(.rev-slidebg),
+.rs-mask-wrap,
+.rs-loop-wrap,
+.rs-parallax-wrap,
+div[class*="layer"],
+.tp-static-layers > div,
+.tp-static-layers .tp-parallax-wrap,
+rs-layer-wrap,
+rs-loop-wrap,
+rs-mask-wrap {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Preserve only the background/main slide */
+.rev-slidebg,
+.slotholder,
+.tp-bgimg {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Target specific layers by their exact IDs */
+rs-layer#slide-9-layer-1,
+rs-layer#slide-9-layer-2,
+rs-layer#slide-9-layer-3,
+rs-layer#slide-9-layer-4,
+rs-layer#slide-9-layer-5,
+rs-layer#slide-9-layer-6 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Additional rules to hide Revolution Slider elements */
+rs-module-wrap,
+rs-module rs-mask-wrap,
+rs-module rs-loop-wrap,
+.rs-layer-wrapped,
+.rs-layer.rs-layer-wrapped,
+rs-slides rs-slide,
+rs-static-layers,
+rs-progress,
+rs-module *:not(.rev-slidebg) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+}
+
+/* Target absolutely everything in the slider except the background */
+rs-module *,
+.rev_slider *,
+#rev_slider_5_1 *,
+.rev_slider_wrapper *,
+[class*="tp-"] *,
+[class*="rs-"] * {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+    pointer-events: none !important;
+}
+
+/* Only allow background elements to show */
+.rev-slidebg,
+.slotholder,
+.tp-bgimg,
+rs-module,
+.rev_slider,
+#rev_slider_5_1,
+.rev_slider_wrapper {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Force hide specific elements regardless of parent */
+*[src*="triangle"],
+*[src*="circle"],
+*[src*="square"],
+rs-layer,
+.tp-caption,
+.tp-parallax-wrap,
+.tp-mask-wrap,
+.tp-loop-wrap {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+    pointer-events: none !important;
+}
+
+/* Target the specific layer structure */
+#slide-9-layer-4,
+#slide-9-layer-3,
+#slide-9-layer-2,
+.tp-caption[class*="rs-parallaxlevel"],
+div[class*="rs-parallaxlevel"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    z-index: -9999 !important;
+}
+
+/* Update service section colors */
+.pro-step {
+    background-color: #CB342C !important;
+}
+
+.pro-step:hover {
+    background-color: #ffffff !important;
+    color: #CB342C !important;
+}
+
+.process-wrapp li:hover .pro-step {
+    color: #CB342C !important;
+}
+
+.process-wrapp li {
+    border-color: #CB342C !important;
+}
+
+/* Update all color variables */
+:root {
+    --primary-color: #CB342C;    /* Specific red */
+    --secondary-color: #000000;  /* Black */
+    --text-light: #ffffff;       /* White */
+}
+
+/* Update all blue/purple colors to red */
+.text-custom,
+.text-red,
+.text-blue {
+    color: #CB342C !important;
+}
+
+/* Update background colors */
+.bg-blue,
+.bg-custom,
+.bg-primary {
+    background-color: #000000 !important;
+}
+
+.bg-red,
+.btn-red,
+.btn-hvr-red:hover {
+    background-color: #CB342C !important;
+}
+
+/* Update border colors */
+.btn-transparent-red {
+    border: 2px solid #CB342C !important;
+    color: #CB342C !important;
+}
+
+.btn-transparent-red:hover {
+    background-color: #CB342C !important;
+    border: 2px solid #CB342C !important;
+}
+
+/* Update any remaining blue colors */
+.btn-blue,
+.btn-hvr-blue:hover {
+    background-color: #000000 !important;
+}
+
+/* Update hover states */
+.btn-hvr-red:hover,
+.btn-hvr-black:hover {
+    background-color: #CB342C !important;
+    color: #ffffff !important;
+}
+
+/* Update progress bars */
+.progress-bar.bg-blue {
+    background-color: #000000 !important;
+}
+
+.progress-bar.bg-red {
+    background-color: #CB342C !important;
+}
+
+/* Update text spans */
+span.text-blue {
+    color: #CB342C !important;
+}
+
+/* Update service icons */
+.service-icon {
+    color: #CB342C;
+}
+
+/* Update borders */
+.border-blue {
+    border-color: #000000 !important;
+}
+
+.border-red {
+    border-color: #CB342C !important;
+}
+
+/* Update gradients */
+.gradient-bg {
+    background: linear-gradient(to right, #000000, #CB342C) !important;
+}
+
+/* Update hover effects */
+.hover-red:hover {
+    color: #CB342C !important;
+}
+
+.hover-black:hover {
+    color: #000000 !important;
+}

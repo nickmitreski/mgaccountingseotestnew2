@@ -181,16 +181,32 @@
     <link rel="stylesheet" href="css/core.css"/>
     
     <!-- Non-critical CSS loaded after page load -->
-    <link rel="preload" href="css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="revolution/css/settings.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/swiper.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/component.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Defer non-critical CSS with longer delay -->
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const deferredCSS = [
+                    'css/animate.min.css',
+                    'css/magnific-popup.min.css',
+                    'css/jquery.fancybox.min.css',
+                    'css/owl.carousel.min.css',
+                    'css/owl.theme.default.min.css',
+                    'css/swiper.min.css',
+                    'css/component.css'
+                ];
+                
+                deferredCSS.forEach(function(href) {
+                    const link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.href = href;
+                    document.head.appendChild(link);
+                });
+            }, 3000);
+        });
+    </script>
     <!-- In the head section, add this line after other CSS links and before custom.css -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -700,6 +716,24 @@
         } else {
             setTimeout(loadDeferredScripts, 1000);
         }
+        
+        // Performance monitoring
+        if ('performance' in window) {
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    const perfData = performance.getEntriesByType('navigation')[0];
+                    const paintMetrics = performance.getEntriesByType('paint');
+                    
+                    console.log('Performance Metrics:', {
+                        'DOM Content Loaded': perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+                        'Load Complete': perfData.loadEventEnd - perfData.loadEventStart,
+                        'First Paint': paintMetrics.find(p => p.name === 'first-paint')?.startTime,
+                        'First Contentful Paint': paintMetrics.find(p => p.name === 'first-contentful-paint')?.startTime,
+                        'Total Resources': performance.getEntriesByType('resource').length
+                    });
+                }, 1000);
+            });
+        }
     </script>
     
     <!-- Add Calendly widget script -->
@@ -777,7 +811,7 @@
             <ul>
                 <li data-index="rs-9" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- Add data-bgparallax attribute to the background image -->
-                                         <img src="images/cover2.jpg" alt="MG Accounting Melbourne Office - Professional Tax Accountants in Oakleigh" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina width="1920" height="1080" loading="eager" fetchpriority="high">
+                                         <img src="images/cover2.jpg" alt="MG Accounting Melbourne Office - Professional Tax Accountants in Oakleigh" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
                     <!-- LAYER NR. 15 -->
                     <div class="tp-caption   tp-resizeme"
                          id="slide-67-layer-2"
@@ -1625,47 +1659,58 @@
 
 
 
-<!-- javascript libraries -->
+<!-- Critical JavaScript - Load immediately -->
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.appear.min.js"></script>
-<!-- owl carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- magnific popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- flip -->
-<script src="js/jquery.flip.min.js"></script>
-<!-- fancybox -->
-<script src="js/jquery.fancybox.min.js"></script>
-<!-- Swiper Core Javascript -->
-<script src="js/swiper.min.js"></script>
-<!-- Morphext js -->
-<script src="js/morphext.min.js"></script>
-<!-- push nav -->
-<script src="js/push_nav.js"></script>
-<!-- wow -->
-<script src="js/wow.js"></script>
-<!-- parallax -->
-<script src="js/parallaxie.min.js"></script>
-<!-- isotope.pkgd.min js -->
-<script src="js/isotope.pkgd.min.js"></script>
-<!-- revolution -->
-<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-<!-- revolution extension -->
-<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-<!-- setting -->
-<script src="js/main.js"></script>
-<!-- Add this before </body> -->
-<script src="js/tax-calculator.js"></script>
+
+<!-- Optimized script loading -->
+<script>
+    // Load non-critical scripts after page load
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            const criticalScripts = [
+                'js/wow.js',
+                'js/main.js',
+                'js/tax-calculator.js'
+            ];
+            
+            const nonCriticalScripts = [
+                'js/jquery.appear.min.js',
+                'js/owl.carousel.min.js',
+                'js/jquery.magnific-popup.min.js',
+                'js/jquery.flip.min.js',
+                'js/jquery.fancybox.min.js',
+                'js/swiper.min.js',
+                'js/morphext.min.js',
+                'js/push_nav.js',
+                'js/parallaxie.min.js',
+                'js/isotope.pkgd.min.js'
+            ];
+            
+            // Load critical scripts first
+            criticalScripts.forEach(function(src, index) {
+                setTimeout(function() {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    script.async = true;
+                    document.body.appendChild(script);
+                }, index * 100);
+            });
+            
+            // Load non-critical scripts with longer delay
+            setTimeout(function() {
+                nonCriticalScripts.forEach(function(src, index) {
+                    setTimeout(function() {
+                        const script = document.createElement('script');
+                        script.src = src;
+                        script.async = true;
+                        document.body.appendChild(script);
+                    }, index * 200);
+                });
+            }, 2000);
+        }, 500);
+    });
+</script>
 <!-- Add consultation calendar script -->
 <script>
 // Initialize WOW.js with options
